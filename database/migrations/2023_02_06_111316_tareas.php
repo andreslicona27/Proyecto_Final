@@ -13,7 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('tareas', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->bigIncrements('id');
+            $table->bigInteger('proyectos_id')->unsigned();
+            $table->foreign('proyectos_id')->references('id')->on('proyectos')->cascadeOnDelete();
+            $table->string('usuario');
+            $table->string("descripcion");
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('tareas');
     }
 };
