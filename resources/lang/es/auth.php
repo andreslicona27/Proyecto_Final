@@ -13,8 +13,7 @@ return [
     |
     */
 
-    'failed' => 'Estos datos no están dentro de nuestra base de datos.',
-    'password' => 'La contraseña dada es incorrecta.',
-    'throttle' => 'Se han registrado demasiados intentos. Intentalo de nuevo en :seconds segundos.',
+    'failed' => 'Estas credenciales no coinciden con nuestros registros.',
+    'throttle' => 'Demasiados intentos de acceso. Por favor inténtelo de nuevo en :seconds segundos.',
 
 ];
