@@ -19,4 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('tareas', App\Http\Controllers\TareaController::class)->middleware('auth');
+Route::resource('proyectos', App\Http\Controllers\ProyectoController::class)->middleware('auth');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
