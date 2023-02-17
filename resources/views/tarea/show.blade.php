@@ -19,10 +19,10 @@
                     </div>
 
                     <div class="card-body">
-                        
+
                         <div class="form-group">
                             <strong>Proyectos Id:</strong>
-                            {{ $tarea->proyectos_id }}
+                            {{ $tarea->proyecto->nombre }}
                         </div>
                         <div class="form-group">
                             <strong>Usuario:</strong>

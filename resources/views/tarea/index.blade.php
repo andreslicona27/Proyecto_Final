@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Proyectos Id</th>
 										<th>Usuario</th>
 										<th>Descripcion</th>
@@ -47,8 +47,8 @@
                                     @foreach ($tareas as $tarea)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
-											<td>{{ $tarea->proyectos_id }}</td>
+
+											<td>{{ $tarea->proyecto->nombre }}</td>
 											<td>{{ $tarea->usuario }}</td>
 											<td>{{ $tarea->descripcion }}</td>
 
