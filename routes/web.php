@@ -23,3 +23,7 @@ Route::resource('tareas', App\Http\Controllers\TareaController::class)->middlewa
 Route::resource('proyectos', App\Http\Controllers\ProyectoController::class)->middleware('auth');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
